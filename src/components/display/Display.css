@@ -1,0 +1,7 @@
+#display {
+    display: flex;
+    border: 2px solid var(--line-color);
+    background-color: var(--sub-color);
+    border-radius: 25px;
+    width: fit-content;
+}
