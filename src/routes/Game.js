@@ -1,13 +1,15 @@
 import React from 'react'
+import { FaHandLizard, FaHandRock, FaHandPaper, FaHandScissors, FaHandSpock } from 'react-icons/fa'
+import ButtonOption from '../components/buttonOption/ButtonOption'
 
 const Game = () => {
   return (
     <div id='game'>
-      <button>Piedra</button>
-      <button>Papel</button>
-      <button>Tijera</button>
-      <button>Lagarto</button>
-      <button>Spock</button>
+      <ButtonOption text='piedra'><FaHandRock /></ButtonOption>
+      <ButtonOption text='papel'><FaHandPaper /></ButtonOption>
+      <ButtonOption text='tijera'><FaHandScissors /></ButtonOption>
+      <ButtonOption text='lagarto'><FaHandLizard /></ButtonOption>
+      <ButtonOption text='spock'><FaHandSpock /></ButtonOption>
     </div>
   )
 }
