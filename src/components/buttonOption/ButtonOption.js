@@ -1,3 +1,5 @@
+import './ButtonOption.css'
+
 const ButtonOption = ({ children, funtion, text }) => {
   return (
     <button className='button-option' onClick={funtion}>

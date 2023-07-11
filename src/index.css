@@ -9,15 +9,15 @@ body {
 }
 
 :root{
-  --base-color: #39B5E0;
-  --sub-color:  #A31ACB;
+  --base-color: #813076;
+  --sub-color:  #4b0361;
+  --accent-color: #165e8d;
   --line-color: #F5EA5A;
   --font-color: white;
-  font-size: 20px;
+  font-size: 25px;
   font-family: 'Segoe UI', 'Times New Roman', Times, serif;
   background: var(--base-color);
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
