@@ -2,7 +2,7 @@ import { createContext, useState } from 'react'
 
 const GameContext = createContext({
   state: {
-    round: 0,
+    round: 1,
     wins: 0,
     losses: 0,
     draws: 0
@@ -11,7 +11,7 @@ const GameContext = createContext({
 
 export const GameProvider = ({ children }) => {
   const initState = {
-    round: 0,
+    round: 1,
     wins: 0,
     losses: 0,
     draws: 0
@@ -23,7 +23,6 @@ export const GameProvider = ({ children }) => {
   const playOption = (option) => {
     setPlayerOption(option)
     setMachineOption(Math.floor((Math.random() * 5) + 1))
-    return getGameResult()
   }
 
   const getGameResult = () => {
@@ -95,7 +94,7 @@ export const GameProvider = ({ children }) => {
   }
 
   return (
-    <GameContext.Provider value={{ playOption, gameState }}>
+    <GameContext.Provider value={{ playOption, getGameResult, machineOption, gameState }}>
       {children}
     </GameContext.Provider>
   )
