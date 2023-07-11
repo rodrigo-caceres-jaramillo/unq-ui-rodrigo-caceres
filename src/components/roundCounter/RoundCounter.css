@@ -1,0 +1,12 @@
+.round-counter {
+    border: 1px solid var(--line-color);
+    background-color: var(--sub-color);
+    border-radius: 20px;
+    padding: 10px;
+    width: 10%;
+}
+
+.round-counter .counter-numer {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}

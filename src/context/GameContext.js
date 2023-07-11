@@ -94,7 +94,7 @@ export const GameProvider = ({ children }) => {
   }
 
   return (
-    <GameContext.Provider value={{ playOption, getGameResult, machineOption, gameState }}>
+    <GameContext.Provider value={{ playOption, getGameResult, machineOption, gameState, playerOption }}>
       {children}
     </GameContext.Provider>
   )
