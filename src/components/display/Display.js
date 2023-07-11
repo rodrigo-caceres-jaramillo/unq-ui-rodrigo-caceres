@@ -7,8 +7,8 @@ const Display = () => {
   const { playerOption, machineOption } = useContext(GameContext)
   return (
     <div id='display'>
-      <DisplayOption option={machineOption} />
       <DisplayOption option={playerOption} />
+      <DisplayOption option={machineOption} />
     </div>
 
   )

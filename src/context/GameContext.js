@@ -21,11 +21,12 @@ export const GameProvider = ({ children }) => {
   const [machineOption, setMachineOption] = useState(0)
 
   const playOption = (option) => {
+    setMachineOption(0)
     setPlayerOption(option)
-    setMachineOption(Math.floor((Math.random() * 5) + 1))
   }
 
   const getGameResult = () => {
+    setMachineOption(Math.floor((Math.random() * 5) + 1))
     const round = gameState.round
     const wins = gameState.wins
     const losses = gameState.losses
